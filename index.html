@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<title>AED Suicide Awareness</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+a {
+   text-decoration: underline;
+}
+a:hover {
+    text-decoration:none;
+    cursor:pointer;
+}  
+    
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('https://www.w3schools.com/w3images/parallax1.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("https://i.imgur.com/4miP1Bp.png");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url("https://i.imgur.com/bt6JnXa.png");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#lifeline" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-phone"></i> Suicide Prevention Lifeline</a>
+    <a href="#depression" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-hotel"></i> DEPRESSION</a>
+      <a href="#anxiety" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-clock-o"></i> ANXIETY</a>
+    <a href="#coping" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-life-saver"></i> COPING</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#lifeline" class="w3-bar-item w3-button" onclick="toggleFunction()">Suicide Prevention Lifeline</a>
+    <a href="#depression" class="w3-bar-item w3-button" onclick="toggleFunction()">DEPRESSION</a>
+    <a href="#anxiety" class="w3-bar-item w3-button" onclick="toggleFunction()">ANXIETY</a>
+    <a href="#coping" class="w3-bar-item w3-button" onclick="toggleFunction()">COPING</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Suicide and Anxiety <span class="w3-hide-small">Background and Prevention</span></span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="lifeline">
+  <h2 class="w3-center">National Suicide Prevention Lifeline</h3>
+  <p class="w3-center"><em>“We can all help prevent suicide. The Lifeline provides 24/7, free and confidential support for people in distress, prevention and crisis resources for you or your loved ones, and best practices for professionals.”</em></p>
+  <h6 class="w3-center"><a href="https://suicidepreventionlifeline.org/">Suicide Prevention Lifeline Website</a></h6>
+  <h6 class="w3-center">Suicide Prevention Lifeline Phone Number: <a href="tel:+1-800-273-8255">1-800-273-8255</a></h6>
+  <hr>
+  <h5 class="w3-center"></h5>
+  <p> If you do not wish to use the Suicide Prevention Lifeline, you can talk to someone at ECU. As a student at East Carolina University, we are given access to the Center for Counselling and Student Development. Located on 10th street at the back side of Umstead Hall, this department’s job is to assist students through any issues (every day to mental health) they are facing during their time at ECU. The services that they provide are counseling (one on one, couple, and group), crisis prevention, and psychiatry help to those who need it. To schedule appointments or call for crisis help their number is <a href="tel:+1-252-328-6661">252-328-6661</a>.</p>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="depression">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">DEPRESSION</span>
+  </div>
+</div>
+
+<!-- Container (Depression Section) -->
+<div class="w3-content w3-container w3-padding-64">
+    <p>Depression is a mental illness that has a significant effect on a person’s ability to function normally and is marked by persistent feelings of sadness, emptiness, worthlessness, and hopelessness. These feelings can continue for years if left untreated. It is estimated that up to 15% of the adult population will experience depression at some point in their lifetime. There are many types of depression, including premenstrual depression, postpartum depression, seasonal depression, and persistent depression (or dysthymia) that occur alongside other mental health issues such as bipolar disorder or schizophrenia. <sup><a href="https://www.mentalhelp.net/articles/depression-hotline/">[1]</a></sup></p>
+    <hr>
+    <h4 class="w3-center w3-padding-64">Depression is the greatest risk factor for suicidal youth. Among young adults aged 18–25 years, 8.3 percent have had serious thoughts of suicide. <sup><a href="https://www.healthline.com/health/depression/college-students#2">[2]</a></sup></h4>
+</div>
+    
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">80%</span><br>
+    of college students that feel overwhelmed by responsibility
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">1 out of 4</span><br>
+    college students have a diagnosable mental illness
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">50%</span><br>
+    of college students feel like anxiety challenges their academic performance
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">< 60%</span><br>
+    of college students experiencing mental health issues seek help
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="anxiety">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">ANXIETY</span>
+  </div>
+</div>
+
+<!-- Container (Anxiety Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+    <p class="w3-center">Anxiety is a feeling of worry, nervousness, or unease, typically about an imminent event or something with an uncertain outcome.
+    Anxiety is especially dangerous for students during this time in their lives and could lead to more dangerous mental issues. Anxiety can take on many different forms based on the person that it affects. Below are common forms and symptoms of anxiety.<sup><a href="https://www.psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders">[3]</a></sup></p>
+    <br>
+    <hr style="width:50%;text-align:center;margin:auto">
+    <br>
+    <h4 class="w3-center">Panic Disorder</h4>
+    <p>The core symptom of panic disorder is recurrent panic attacks, an overwhelming combination of physical and psychological distress. During an attack several of these symptoms occur in combination:</p>
+    <ul>
+        <li>Palpitations, pounding heart or rapid heart rate</li>
+        <li>Sweating</li>
+        <li>Trembling or shaking</li>
+        <li>Feeling of shortness of breath or smothering sensations</li>
+        <li>Chest pain</li>
+        <li>Feeling dizzy, light-headed or faint</li>
+        <li>Feeling of choking</li>
+        <li>Numbness or tingling</li>
+        <li>Chills or hot flashes</li>
+        <li>Nausea or abdominal pains</li>
+        <li>Feeling detached</li>
+        <li>Fear of losing control</li>
+        <li>Fear of dying</li>
+    </ul>
+    <p>Because symptoms are so severe, many people who experience a panic attack may believe they are having a heart attack or other life-threatening illness and may go to a hospital ER. Panic attacks may be expected, such as a response to a feared object, or unexpected, apparently occurring for no reason. The mean age of onset of panic disorder is 22-23. Panic attacks may occur with other mental disorders such as depression or PTSD.</p>
+    <br>
+    <hr style="width:50%;text-align:center;margin:auto">
+    
+    <h4 class="w3-center">Phobias, Specific Phobia</h4>
+    <p>A specific phobia is excessive and persistent fear of a specific object, situation or activity that is generally not harmful. Patients know their fear is excessive, but they can’t overcome it. These fears cause such distress that some people go to extreme lengths to avoid what they fear. Examples are fear of flying or fear of spiders.</p>
+    <br>
+    <hr style="width:50%;text-align:center;margin:auto">
+    
+    <h4 class="w3-center">Agoraphobia</h4>
+    <p>Agoraphobia is the fear of being in situations where escape may be difficult or embarrassing, or help might not be available in the event of panic symptoms. The fear is out of proportion to the actual situation and lasts generally six months or more and causes problems in functioning. A person with agoraphobia experiences this fear in two or more of the following situations</p>
+    <ul>
+        <li>Using public transportation</li>
+        <li>Being in open spaces</li>
+        <li>Being in enclosed places</li>
+        <li>Standing in line or being in a crowd</li>
+        <li>Being outside the home alone</li>
+    </ul>
+    <p>The individual actively avoids the situation, requires a companion or endures with intense fear or anxiety. Untreated agoraphobia can become so serious that a person may be unable to leave the house. A person can only be diagnosed with agoraphobia if the fear is intensely upsetting, or if it significantly interferes with normal daily activities.</p>
+    <br>
+    <hr style="width:50%;text-align:center;margin:auto">
+    
+    <h4 class="w3-center">Social Anxiety Disorder</h4>
+    <p>A person with a social anxiety disorder has significant anxiety and discomfort about being embarrassed, humiliated, rejected or looked down on in social interactions. People with this disorder will try to avoid the situation or endure it with great anxiety. Common examples are an extreme fear of public speaking, meeting new people or eating/drinking in public. The fear or anxiety causes problems with daily functioning and lasts at least six months.</p>
+    <br>
+</div>
+    
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">1 out of 12</span><br>
+    college students make a suicide plan
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">25%</span><br>
+    of all serious adult psychiatric issues manifest themselves between the ages of 18 and 25
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">15%</span><br>
+    of college students that have commit suicide sought counselling on campus
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">>50%</span><br>
+    of college students experiencing suicidal thoughts tell a friend before consulting a mental health professional
+  </div>
+</div>
+    
+<!-- Fourth Parallax Image with Portfolio Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min" id="coping">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">COPING MECHANISMS</span>
+  </div>
+</div>
+
+<!-- Container (Coping Section) -->
+<div class="w3-content w3-container w3-padding-64">
+    <br>
+    <h4 class="w3-center">Antidepressants</h4>
+    <p>Selective serotonin reuptake inhibitors (SSRIs) are a common type of antidepressant that decreases the effects of depression and anxiety. Our brains consist of many chemical messengers (neurotransmitters) that carry signals between the cells in our brains. SSRIs are selective for Serotonin, a neurotransmitter, which regulates our mood, sleep, behavior, etc.</p>
+    <p>Reuptake involves the reabsorption of a neurotransmitter by the cell that originally secreted it. The Inhibitors, in this case, stop the reabsorption of serotonin thus increasing its levels.</p>
+    <br>
+    <br>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/G4r3qCkLUDQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="display: block;margin: auto;"></iframe>
+    <br>
+    <h5 class="w3-center"><a href="https://www.webmd.com/depression/ss/slideshow-antidepressants">Visit WebMD to gain more information about antidepressants</a></h5>
+    <br>
+    <hr style="width:50%;text-align:center;margin:auto">
+    
+    <br>
+    <h4 class="w3-center">Resources at ECU</h4>
+    <hr style="width:10%;text-align:center;margin:auto">
+    <h6 class="w3-center"><b>Center for Counseling and Student Development (CCSD)</b></h6>
+    <p>Individual counseling is provided to students with up to 12 sessions in an academic year although most students benefit from 4-5 sessions.</p>
+    <p class="w3-center"><b>Contact Information</b></p>
+    <p class="w3-center">Phone Number<br> <a href="tel:+1-252-328-6661">(252) 328-6661</a></p>
+    <p class="w3-center">Regular Hours<br><em>Monday - Friday <br> 8:00 AM - 5:00 PM</em></p>
+    <p class="w3-center">Location<br><em>1st floor of Umstead Hall: Room 137</em></p>
+    <p class="w3-center"><a href="http://www.ecu.edu/cs-studentaffairs/counselingcenter/">For more information visit the CCSD website.</a></p>
+    
+    <br>
+    <h6 class="w3-center"><b>Student Recreation Center</b></h6>
+    <p>Offers various programs and events that promote wellness, including a 15-week online program that holds classes online via Blackboard.</p>
+    <p class="w3-center"><a href="http://www.ecu.edu/cs-studentaffairs/crw/Student-Recreation-Center.cfm">For more information visit the SRC website.</a></p>
+    <p class="w3-center"><a href="http://www.ecu.edu/cs-studentaffairs/crw/">Campus Recreation and Wellness Website</a></p>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <!--
+    <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  -->
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
